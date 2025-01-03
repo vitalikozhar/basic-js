@@ -14,7 +14,6 @@ const { NotImplementedError } = require("../extensions/index.js");
  *
  */
 function createDreamTeam(members) {
-  console.log(members);
   if (!Array.isArray(members)) return false;
   let nameResult = [];
   for (let i = 0; i < members.length; i += 1) {
@@ -27,7 +26,6 @@ function createDreamTeam(members) {
   }
   if (nameResult.length === 0) return false;
   const result = nameResult.sort();
-  console.log(result.join(""));
   return result.join(""); // remove line with error and write your code here
 }
 
