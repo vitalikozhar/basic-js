@@ -17,10 +17,8 @@ const { NotImplementedError } = require("../extensions/index.js");
  *--double-prev дублирует предыдущий элемент массива в преобразованном массиве.
  */
 function transform(arr) {
-  if (!Array.isArray(arr)) {
-    throw new NotImplementedError(
-      "'arr' parameter must be an instance of the Array!"
-    );
+   if (!Array.isArray(arr)) {
+    throw new Error("'arr' parameter must be an instance of the Array!");
   }
   console.log(arr);
   const result = [];

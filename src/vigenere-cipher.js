@@ -27,7 +27,7 @@ class VigenereCipheringMachine {
 
   encrypt(string, key) {
     if (string === undefined || key === undefined) {
-      throw new NotImplementedError("Incorrect arguments!");
+      throw new Error("Incorrect arguments!");
     }
     const resultCod = [];
     const upString = string.toUpperCase();
@@ -59,7 +59,7 @@ class VigenereCipheringMachine {
 
   decrypt(string, key) {
     if (string === undefined || key === undefined) {
-      throw new NotImplementedError("Incorrect arguments!");
+      throw new Error("Incorrect arguments!");
     }
   
     const resultCod = [];
